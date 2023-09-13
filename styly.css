@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 300px;
+
+}
+
+.profile-img{
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-img:hover  .avatar-frame{
+    border: 20px solid rgb(76, 216, 76);
+   transition: 0.5s ease;
+}
+
+.profile-img:hover .isActive{
+    background-color: red;
+    transition: 0.5s ease;
+}
+
+.profile-img:hover h1{
+    color: green;
+    transition: 0.5s ease-in-out;
+}
+
+.avatar-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border: 20px solid red;
+    border-radius: 50%;
+
+}
+
+
+.avatar-frame:hover{
+    border: 20px solid rgb(76, 216, 76);
+    transition: all 0.5.s ease;
+
+}
+
+.avatar-frame:hover  .isActive{
+    background-color: red;
+
+}
+
+.avatar{
+    width: 360px;
+    height: 360px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-color: rgb(180, 180, 180);
+}
+.isActive{
+    position: absolute;
+    top: 65%;
+    right: 37%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: rgb(76, 216, 76);
+    }
+
+    .isActive:hover{
+        background-color: rgb(255, 0, 0);
+        transition: 0.5s ease;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 50px;
+        cursor: pointer;
+}
